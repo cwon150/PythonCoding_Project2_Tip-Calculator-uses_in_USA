@@ -26,7 +26,9 @@ tip_percent2 = tip_percent/100 + 1
 
 split_num = float(input("How many people to split the bill? "))
 
-result = (total_bill / split_num) * tip_percent2
+bill_with_tip = tip / 100 * total_bill + total_bill
+
+result = bill_with_tip / split_num
 
 print(f"Each person should pay: ${result:.2f}")
 
@@ -46,7 +48,12 @@ result = bill_with_tip / split_num
 
 # The reason that I do not add -  final_result = round(result,2) and then I code - print(final_result) at the end because it is a formating problem. We will only get the result of $33.6 [(150/5)*1.12 = 33.6]. 
 
-print(f"Each person should pay: ${result:.2f}")
+final_result = "{:.2}". format(result)
+
+print(f"Each person should pay: ${final_result}")
+
+# Line 51 - Call str.format(*args) with "{:.2f}" as str (strings) and a float as *args (aruguements) to limit the float to two decimal places as a string.
+
 
 
 
