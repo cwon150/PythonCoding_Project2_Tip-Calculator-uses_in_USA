@@ -48,12 +48,11 @@ result = bill_with_tip / split_num
 
 # The reason that I do not add -  final_result = round(result,2) and then I code - print(final_result) at the end because it is a formating problem. We will only get the result of $33.6 [(150/5)*1.12 = 33.6]. 
 
-final_result = "{:.2}". format(result)
+final_result = "{:.2f}". format(result)
 
 print(f"Each person should pay: ${final_result}")
 
-# Line 51 (which is the following code above) - Call str.format(*args) with "{:.2f}" as str (strings) and a float as *args (arguments) to limit the float to two decimal places as a string.
-
+# Line 51 (which is the following code above) - Call str.format(*args) with "{:.2f}" as str (strings) and a float as *args (arguments) to limit the float to two decimal places as a string. For more information, you can find out from https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
 
 
 
