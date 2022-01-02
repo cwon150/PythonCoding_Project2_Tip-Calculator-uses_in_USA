@@ -52,7 +52,7 @@ final_result = "{:.2}". format(result)
 
 print(f"Each person should pay: ${final_result}")
 
-# Line 51 (which is the following code above) - Call str.format(*args) with "{:.2f}" as str (strings) and a float as *args (aruguements) to limit the float to two decimal places as a string.
+# Line 51 (which is the following code above) - Call str.format(*args) with "{:.2f}" as str (strings) and a float as *args (arguments) to limit the float to two decimal places as a string.
 
 
 
